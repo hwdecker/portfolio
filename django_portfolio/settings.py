@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-)+!&oe2qcckia#_q@8s7y4o4@@-eb1qnun7468h-zk$u@-k*mp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['haydenswebsite.herokuapp.com']
 
 
 # Application definition
@@ -127,3 +127,6 @@ MEDIA_URL = '/media/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AWS_S3_REGION_NAME = 'us-east-2' # Your region name
+AWS_S3_SIGNATURE_VERSION = 's3v4'
