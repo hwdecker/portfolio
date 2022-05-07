@@ -66,7 +66,7 @@ ul {
 }
 
 .container .jumbotron {
-  background-image: url("/media/header-blue.jpg");
+  background-image: url("/static/portfolio/header-blue.jpg");
   background-size: cover;
 }
 
