@@ -1,0 +1,20 @@
+{% extends "portfolio/base.html" %}
+{% block content %}
+<div class="d-flex justify-content-center mb-2">
+    <h1>Projects</h1>
+</div>
+    {% for project in projects %}
+<div class="col-lg-4 col-sm-6 mb-4 d-flex align-items-stretch">
+    <div class="card">
+        <img class="card-img-top" src="{{ project.image.url }}">
+        <div class="card-body">
+            <h5 class="card-title ">{{ project.title }}</h5>
+            <p class="card-text">{{ project.brief_description }}</p>
+        </div>
+        <div class="card-footer">
+            <a href="{% url 'project-detail' project.id %}" class="btn btn-primary stretched-link">Read More</a>                   
+        </div>
+    </div>
+</div>
+    {% endfor %}
+{% endblock %}

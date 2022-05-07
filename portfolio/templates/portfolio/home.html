@@ -1,0 +1,27 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+    <div class="col-md-8">
+        <div class="jumbotron rounded-3 p-3 mb-3">
+            <h1 class="display-5" style="color: #ffffff;">About Me</h1>
+        </div> 
+
+        <article class="media content-section rounded-3">
+            <h2 class="article-title">Welcome!</h2>
+            <p class="article-content text-justify" style="font-weight: bold;">Thank you for visiting! My name is Hayden Decker and on this website I share information about myself, programming projects, and new things I've been learning in the form of blog posts.</p>
+        </article>  
+
+        <article class="media content-section rounded-3">
+            <h3 class="article-title">What I Know</h3>
+            <p class="article-content text-justify" style="font-weight: bold;"> Java, Python, C#, PHP, SQL, Django, Git and Microsoft Office applications. I also have some knowledge of common network protocols, IP subnetting, and various other networking and computer security practices.</p>
+        </article> 
+
+        <article class="media content-section rounded-3">
+            <h3 class="article-title">My Experience</h3>
+            <p class="article-content text-justify" style="font-weight: bold;">I have 4 semesters at BCTC as a CIT/CS tutor. This has been a valuable experience, not only for my programming and problem solving abilities, but it has given me many hours working in a team with students.</p>
+        </article> 
+
+    </div>
+    {% include 'portfolio/base_sidebar.html' %}
+
+{% endblock content %}
