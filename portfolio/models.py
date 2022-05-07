@@ -15,15 +15,15 @@ class Project(models.Model):
     def __str__(self):
         return self.title
 
-    def save(self, *args, **kwargs):
-        super().save(*args, **kwargs)
+    #def save(self, *args, **kwargs):
+    #    super().save(*args, **kwargs)
 
-        img = Image.open(self.image.path)
+    #    img = Image.open(self.image.path)
 
-        if img.height > 720 or img.width > 1280:
-            output_size = (720, 1280)
-            img.thumbnail(output_size)
-            img.save(self.image.path)
+    #    if img.height > 720 or img.width > 1280:
+    #       output_size = (720, 1280)
+    #        img.thumbnail(output_size)
+    #        img.save(self.image.path)
 
     def get_absolute_url(self):
         return reverse('project-detail', kwargs={'pk': self.pk})
